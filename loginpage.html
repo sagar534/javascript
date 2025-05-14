@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            background-image: url('https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg');
+            background-size: cover; /* Make the image cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent image from repeating */
+        }
+
+        .login-container {
+            position: relative;
+        }
+
+        .login-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            z-index: 1;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .textbox {
+            margin: 10px 0;
+        }
+
+        .textbox input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #333;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .social-login button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .circle.blue {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to right, #2387f9, #517ff7);
+            top: -50px;
+            left: -50px;
+        }
+
+        .circle.red {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to right, #f32261, #f32261);
+            bottom: -50px;
+            right: -50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login Here</h2>
+            <form action="#">
+                <div class="textbox">
+                    <input type="text" placeholder="Email or Phone" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Log In</button>
+            </form>
+        </div>
+        <div class="circle blue"></div>
+        <div class="circle red"></div>
+    </div>
+</body>
+</html>
